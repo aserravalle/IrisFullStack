@@ -1,4 +1,3 @@
-// document.getElementById('basic').addEventListener('click', displayInfo)
 document.getElementById('irisForm').addEventListener('submit', displayInfo)
 
 function displayPrediction() {

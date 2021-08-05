@@ -1,12 +1,12 @@
-from flask import Flask, json, request, jsonify
-from joblib import load
+from flask import Flask, request, jsonify
+from sklearn.externals import joblib
 from flask_cors import CORS, cross_origin
 
-model = load('./../ml_model/saved_models/model.joblib')
-
+model = joblib.load('ml_model\saved_models\model.joblib')
 app = Flask(__name__)
 cors = CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
+
 @app.route('/', methods = ['GET', 'POST'])
 @cross_origin()
 def basic():

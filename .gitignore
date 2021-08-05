@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+etc/
+
+# Environments
+.env
+.venv
+env/
+venv/
+_venv/
+ENV/
+env.bak/
+venv.bak/
+/bin
+
+# venv
+Include/
+Scripts/
+Lib/
+pyvenv.cfg
+bin/
+share/
+lib64
+
+# VS Code
+.vscode/
+
+# Desktop
+desktop.ini
